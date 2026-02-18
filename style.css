@@ -1,0 +1,192 @@
+/* Basic Reset and Font */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    font-size: 1.1em;
+}
+
+/* Cards */
+section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Instructions */
+.instructions-card h2 {
+    color: #2980b9;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.instructions-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.instructions-card li {
+    margin-bottom: 8px;
+}
+
+/* Email Mockup */
+.email-mockup {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.email-header {
+    background-color: #eaeaea;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+}
+
+.email-header p {
+    margin-bottom: 5px;
+}
+
+.email-body {
+    padding: 20px 15px;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+    min-height: 150px;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-safe {
+    background-color: #27ae60;
+    color: white;
+}
+
+.btn-safe:hover {
+    background-color: #219150;
+}
+
+.btn-phishing {
+    background-color: #c0392b;
+    color: white;
+}
+
+.btn-phishing:hover {
+    background-color: #a93226;
+}
+
+/* Feedback Area */
+.feedback-area {
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.feedback-area.correct {
+    border-color: #27ae60;
+    background-color: #eafaf1;
+}
+
+.feedback-area.incorrect {
+    border-color: #c0392b;
+    background-color: #fdedec;
+}
+
+.feedback-area h3 {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.feedback-area.correct h3 {
+    color: #27ae60;
+}
+
+.feedback-area.incorrect h3 {
+    color: #c0392b;
+}
+
+.btn-next {
+    background-color: #3498db;
+    color: white;
+    margin-top: 15px;
+}
+
+.btn-next:hover {
+    background-color: #2980b9;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Score Area */
+.score-area {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #fff; /* Ensure visibility */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .controls {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Attack Simulation Trainer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Phishing Attack Simulation Trainer (Educational)</h1>
+            <p class="subtitle">Practice spotting phishing emails in a safe simulation.</p>
+        </header>
+
+        <section class="instructions-card">
+            <h2>How to Spot Phishing Emails</h2>
+            <ul>
+                <li><strong>Urgent or threatening language:</strong> Attackers often use fear or urgency to make you act quickly without thinking.</li>
+                <li><strong>Suspicious sender address:</strong> Check if the email address matches the sender name and organization.</li>
+                <li><strong>Unexpected attachments or links:</strong> Be wary of unsolicited files or links, especially if they ask for login details.</li>
+                <li><strong>Poor spelling and grammar:</strong> Legitimate organizations usually have professional communication.</li>
+                <li><strong>Requests for personal info:</strong> Reputable companies rarely ask for passwords or sensitive data via email.</li>
+            </ul>
+        </section>
+
+        <section class="simulation-area">
+            <div class="email-mockup">
+                <div class="email-header">
+                    <p><strong>From:</strong> <span id="email-from"></span></p>
+                    <p><strong>Subject:</strong> <span id="email-subject"></span></p>
+                </div>
+                <div class="email-body">
+                    <p id="email-body-text"></p>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="btn-safe" class="btn btn-safe">This is SAFE</button>
+                <button id="btn-phishing" class="btn btn-phishing">This is PHISHING</button>
+            </div>
+        </section>
+
+        <section class="feedback-area hidden" id="feedback-section">
+            <h3 id="feedback-title"></h3>
+            <p id="feedback-explanation"></p>
+            <button id="btn-next" class="btn btn-next">Next Email</button>
+        </section>
+
+        <section class="score-area">
+            <p>Score: <span id="score-correct">0</span> / <span id="score-total">0</span></p>
+        </section>
+
+        <footer>
+            <p><strong>DISCLAIMER:</strong> This is an educational phishing simulation and does not send or receive real email.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
