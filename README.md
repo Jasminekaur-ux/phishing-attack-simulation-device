@@ -1,13 +1,3 @@
-Below is a complete README.md you can copy into your repository and then adjust small details (like your name, screenshots, or exact paths) as needed.
-
-Phishing Attack Simulation Device
-
-This project is a phishing attack simulation device that demonstrates how a fake login or capture page can be used to collect sensitive information such as usernames and passwords for educational and awareness purposes only. It is designed to help students and security beginners understand how phishing works in practice so they can better detect and avoid such attacks in the real world. [github](https://github.com/Cyberguy786/Phishing_Simulation)
-
-> ⚠️ This project is strictly for learning and demonstration in controlled environments. Do not use it against real users without explicit written permission.
-
-
-
 Features
 
 - Simulates a realistic phishing page (for example, a fake login form) to show how attackers trick users into entering credentials. [github](https://github.com/Cyberguy786/Phishing_Simulation)
